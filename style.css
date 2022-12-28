@@ -1235,6 +1235,7 @@ figure {
     box-shadow: 0px 30px 80px rgba(25, 23, 34, 0.1);
     border-radius: 16px;
     padding: 40px;
+    position: relative;
 }
 
 .auth-section .auth-right .wp-block-group .tml-login {
@@ -1752,7 +1753,76 @@ color: #525256;
 .singup-current-step-3 .auth-section .auth-right .wp-block-group {
     max-width: 890px;
 }
-
+.stepper-form fieldset.step-4 .finish-tag {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #5E59D4;
+    padding: 5px 20px;
+    background-color: rgba(94, 89, 213, 0.1);
+    border-radius: 2px;
+}
+.stepper-form fieldset.step-4 .finish-price {
+    color: #201C70;
+}
+.stepper-form fieldset.step-4 .period {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #525256;
+}
+.stepper-form fieldset.step-4 .input-group {
+    gap: 20px;
+}
+.stepper-form fieldset.step-4 .input-group .form-control {
+    border: 1px solid #E8E8E8;
+    border-radius: 2px;
+    background-color: transparent;
+}
+.stepper-form fieldset.step-4 .input-group .btn {
+    border: 1px solid #201C70;
+    border-radius: 2px;
+    letter-spacing: 0.02em;
+    color: #201C70;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 36px;
+}
+.stepper-form fieldset.step-4 .table {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #525256;
+}
+.stepper-form fieldset.step-4 .table>:not(caption)>*>* {
+    padding: 17px 0.5rem;
+}
+.stepper-form fieldset.step-4 .table tr:last-child td {
+    border-bottom-style: none;
+}
+.stepper-form fieldset.step-4 .form-title {
+    padding: 12px 15px;
+    background-color: #174A61;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.stepper-form fieldset.step-4 .seperate {
+    border: 1px solid #E8E8E8;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.singup-current-step-3 .stepper-form .actions ul li a {
+    position: absolute;
+    right: 80px;
+    bottom: 96px;
+}
 /*Footer*/
 footer {
     padding-top: 100px;

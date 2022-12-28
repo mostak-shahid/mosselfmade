@@ -464,17 +464,17 @@ function signup_form_func( $atts = array(), $content = null ) {
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="wrapper">
-                            <div class="finish-tag">Subscribe to Grow membership</div>
-                            <h2 class="finish-price">$139.00</h2>
-                            <p class="period">Per month</p>
-                            <p class="fs-14">Get unstuck and supported in live, interactive sessions with our seasoned coaches.</p>
-                            <h4 class="finish-title">Grow membership</h4>
-                            <p class="fs-14">Billed monthly</p>
-                            <div class="input-group mb-3">
+                            <div class="finish-tag mb-20">Subscribe to Grow membership</div>
+                            <h2 class="finish-price mb-10">$139.00</h2>
+                            <p class="period mb-15">Per month</p>
+                            <p class="fs-14 mb-20">Get unstuck and supported in live, interactive sessions with our seasoned coaches.</p>
+                            <h4 class="finish-title mb-10">Grow membership</h4>
+                            <p class="fs-14 mb-20">Billed monthly</p>
+                            <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Enter promo code" aria-label="Enter promo code" aria-describedby="button-addon2">
                                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">Apply</button>
                             </div>
-                            <table class="table">
+                            <table class="table mb-0">
                                 <tbody>
                                     <tr>
                                         <td>Subtotal</td>
@@ -492,7 +492,42 @@ function signup_form_func( $atts = array(), $content = null ) {
                             </table>
                         </div>
                     </div>
-                    <div class="col-lg-6">Form</div>
+                    <div class="col-lg-6">
+                        <div class="wrapper">
+                            <div class="form-title d-flex justify-content-center align-items-center gap-2 ">
+                                <img src="<?php echo get_template_directory_uri() ?>/images/strip.png" alt="" width="40" height="27">
+                                <span>Pay with stripe</span>
+                            </div>
+                            <div class="seperate"></div>
+                            <div class="payment-form">
+                                <div class="form-group mb-20">
+                                    <input id="card_full_name" name="card_full_name" type="text" class="mos-form-validate form-control" placeholder="Enter your full name" required>
+                                </div>
+                                <div class="form-group mb-20">
+                                    <input id="card_number" name="card_number" type="text" class="mos-form-validate form-control" placeholder="Card number" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group mb-20">
+                                            <input id="card_exp" name="card_exp" type="text" class="mos-form-validate form-control" placeholder="MM/YYYY" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group mb-20">
+                                            <input id="card_cvc" name="card_cvc" type="text" class="mos-form-validate form-control" placeholder="CVC" required>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="form-group mb-20">
+                                    <input id="card_card_number" name="card_country" type="text" class="mos-form-validate form-control" placeholder="Country" required>
+                                </div>
+                                <div class="form-group mb-20">
+                                    <input id="card_card_number" name="card_zip_code" type="text" class="mos-form-validate form-control" placeholder="Zip code" required>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </fieldset>
