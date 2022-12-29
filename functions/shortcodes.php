@@ -176,7 +176,7 @@ function signup_form_func( $atts = array(), $content = null ) {
                 <input id="confirm" name="confirm" type="password" class="mos-form-validate form-control" placeholder="Re-type your password" required>
             </div>
             <div class="form-group tml-field-wrap tml-rememberme-wrap mb-20">
-                <input name="marketing-email" type="checkbox" value="forever" id="marketing-email" class="tml-checkbox">
+                <input name="marketing-email" type="checkbox" value="yes" id="marketing-email" class="tml-checkbox">
                 <label class="tml-label" for="marketing-email">I would like to recieve occasional marketing emails from selfmade and its partners</label>
             </div>
         </fieldset>
@@ -209,7 +209,7 @@ function signup_form_func( $atts = array(), $content = null ) {
                 </select>            
             </div>
             <div class="form-group tml-field-wrap tml-rememberme-wrap mb-20">
-                <input id="privacy-policy" name="privacy-policy" type="checkbox" value="forever" class="tml-checkbox">
+                <input id="privacy-policy" name="privacy-policy" type="checkbox" value="yes" class="tml-checkbox">
                 <label class="tml-label" for="privacy-policy"><span>I agree to Selfmade’s <a href="#">Privacy policy</a> and <a href="#">Terms of Use</a></span></label>
             </div>
         </fieldset>
@@ -504,25 +504,28 @@ function signup_form_func( $atts = array(), $content = null ) {
                                     <input id="card_full_name" name="card_full_name" type="text" class="mos-form-validate form-control" placeholder="Enter your full name" required>
                                 </div>
                                 <div class="form-group mb-20">
-                                    <input id="card_number" name="card_number" type="text" class="mos-form-validate form-control" placeholder="Card number" required>
+                                    <input id="card_number" name="card_number" type="text" data-inputmask="'mask': '9999 9999 9999 9999'" class="mos-form-validate form-control" placeholder="Card number" required>
                                 </div>
                                 <div class="row">
                                     <div class="col-6">
                                         <div class="form-group mb-20">
-                                            <input id="card_exp" name="card_exp" type="text" class="mos-form-validate form-control" placeholder="MM/YYYY" required>
+                                            <input id="card_exp" name="card_exp" type="text" data-inputmask="'mask': '99/9999'" class="mos-form-validate form-control" placeholder="MM/YYYY" required>
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="form-group mb-20">
-                                            <input id="card_cvc" name="card_cvc" type="text" class="mos-form-validate form-control" placeholder="CVC" required>
+                                            <input id="card_cvc" name="card_cvc" type="text" data-inputmask="'mask': '999'" class="mos-form-validate form-control" placeholder="CVC" required>
                                         </div>                                        
                                     </div>
                                 </div>
                                 <div class="form-group mb-20">
-                                    <input id="card_card_number" name="card_country" type="text" class="mos-form-validate form-control" placeholder="Country" required>
+                                    <input id="card_country" name="card_country" type="text" class="mos-form-validate form-control" placeholder="Country" required>
                                 </div>
                                 <div class="form-group mb-20">
-                                    <input id="card_card_number" name="card_zip_code" type="text" class="mos-form-validate form-control" placeholder="Zip code" required>
+                                    <input id="card_zip_code" name="card_zip_code" type="text" class="mos-form-validate form-control" placeholder="Zip code" required>
+                                </div>
+                                <div class="form-group">
+                                    <button class="registration-complete" type="button">Subscribe</button>
                                 </div>
                                 
                             </div>

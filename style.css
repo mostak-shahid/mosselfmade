@@ -1375,8 +1375,8 @@ figure {
 
 .stepper-form .steps ul li::before {
     /*    content:counter(item, decimal-leading-zero) " ";*/
-    content: counter(item);
-    counter-increment: item;
+/*    content: counter(item);*/
+/*    counter-increment: item;*/
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1412,15 +1412,6 @@ figure {
     background-color: #67AD5B;
 }
 
-.stepper-form .steps ul li a {
-    display: block;
-    opacity: 0;
-    position: relative;
-    z-index: 2;
-    width: 40px;
-    height: 40px;
-}
-
 .stepper-form .steps ul li.done,
 .stepper-form .steps ul li.current {
     background-color: #67AD5B;
@@ -1434,6 +1425,37 @@ figure {
     content: url(images/step-check.png);
     width: 17px;
     height: 12px;
+}
+
+.stepper-form .steps ul li a {
+    display: block;
+/*    opacity: 0;*/
+    position: relative;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #67AD5B;
+}
+
+.stepper-form .steps ul li.current a {
+    color: #FFFFFF;
+}
+.stepper-form .steps ul li.done a {
+    opacity: 0;
+}
+.stepper-form .steps ul li a .current-info {
+    display: none;
 }
 
 .stepper-form fieldset .form-control,
@@ -1788,6 +1810,7 @@ color: #525256;
     font-size: 16px;
     line-height: 24px;
     padding: 12px 36px;
+    background-color: transparent;
 }
 .stepper-form fieldset.step-4 .table {
     font-weight: 400;
@@ -1819,9 +1842,42 @@ color: #525256;
     margin-bottom: 30px;
 }
 .singup-current-step-3 .stepper-form .actions ul li a {
+    margin-top: 30px;
+/*
     position: absolute;
     right: 80px;
     bottom: 96px;
+*/
+}
+
+.stepper-form fieldset.step-4 .registration-complete {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #1A1A1C;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border-style: none;
+    background-color: #FFD335;
+    border-radius: 2px;
+}
+.signup-form-wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup-completed {
+    width: 100%;
+    max-width: 599px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 40px 50px;
 }
 /*Footer*/
 footer {
