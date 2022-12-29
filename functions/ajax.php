@@ -74,6 +74,12 @@ function mos_user_register_ajax_callback () {
             
             update_user_meta($user_id,'first_name',$data['full_name']);
             update_user_meta($user_id,'full_name',$data['full_name']);
+            update_user_meta($user_id,'marketing_email',$data['marketing_email']);
+            update_user_meta($user_id,'biz_journey',$data['biz_journey']);
+            update_user_meta($user_id,'your_industry',$data['your_industry']);
+            update_user_meta($user_id,'your_interest',$data['your_interest']);
+            update_user_meta($user_id,'privacy_policy',$data['privacy_policy']);
+            update_user_meta($user_id,'pricing',$data['pricing']);
             //$user = new WP_User( $user_id );
             //$user->set_role( 'administrator' );
         }	

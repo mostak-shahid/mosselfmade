@@ -176,8 +176,8 @@ function signup_form_func( $atts = array(), $content = null ) {
                 <input id="confirm" name="confirm" type="password" class="mos-form-validate form-control" placeholder="Re-type your password" required>
             </div>
             <div class="form-group tml-field-wrap tml-rememberme-wrap mb-20">
-                <input name="marketing-email" type="checkbox" value="yes" id="marketing-email" class="tml-checkbox">
-                <label class="tml-label" for="marketing-email">I would like to recieve occasional marketing emails from selfmade and its partners</label>
+                <input name="marketing_email" type="checkbox" value="yes" id="marketing_email" class="tml-checkbox">
+                <label class="tml-label" for="marketing_email">I would like to recieve occasional marketing emails from selfmade and its partners</label>
             </div>
         </fieldset>
 
@@ -185,7 +185,7 @@ function signup_form_func( $atts = array(), $content = null ) {
         <fieldset class="step-2">
             <h4 class="text-center mb-30">Add few more information about you</h4>
             <div class="form-group mb-20">            
-                <select id="biz-journey" name="biz-journey" class="mos-form-validate form-select" aria-label="Where are you in your biz journey?" required>
+                <select id="biz_journey" name="biz_journey" class="mos-form-validate form-select" aria-label="Where are you in your biz journey?" required>
                     <option selected>Where are you in your biz journey?</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -193,7 +193,7 @@ function signup_form_func( $atts = array(), $content = null ) {
                 </select>            
             </div>
             <div class="form-group mb-20">            
-                <select id="your-industry" name="your-industry" class="mos-form-validate form-select" aria-label="What is your industry?" required>
+                <select id="your_industry" name="your_industry" class="mos-form-validate form-select" aria-label="What is your industry?" required>
                     <option selected>What is your industry?</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -201,7 +201,7 @@ function signup_form_func( $atts = array(), $content = null ) {
                 </select>            
             </div>
             <div class="form-group mb-20">            
-                <select id="your-interest" name="your-interest" class="mos-form-validate form-select" aria-label="What top 3 topics are you interested in?" required>
+                <select id="your_interest" name="your_interest" class="mos-form-validate form-select" aria-label="What top 3 topics are you interested in?" required>
                     <option selected>What top 3 topics are you interested in?</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
@@ -209,10 +209,11 @@ function signup_form_func( $atts = array(), $content = null ) {
                 </select>            
             </div>
             <div class="form-group tml-field-wrap tml-rememberme-wrap mb-20">
-                <input id="privacy-policy" name="privacy-policy" type="checkbox" value="yes" class="tml-checkbox">
-                <label class="tml-label" for="privacy-policy"><span>I agree to Selfmade’s <a href="#">Privacy policy</a> and <a href="#">Terms of Use</a></span></label>
+                <input id="privacy_policy" name="privacy_policy" type="checkbox" value="yes" class="tml-checkbox">
+                <label class="tml-label" for="privacy_policy"><span>I agree to Selfmade’s <a href="#">Privacy policy</a> and <a href="#">Terms of Use</a></span></label>
             </div>
         </fieldset>
+
 
         <h3 class="step-title d-none">Pricing</h3>
         <fieldset class="step-3">

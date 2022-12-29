@@ -76,9 +76,11 @@ jQuery(document).ready(function ($) {
                         'data' : form.serialize(),
                     },
                     success: function(result){
-                        console.log(result);
-                        form.hide();
-                        $('.signup-completed').show();
+                        //console.log(result);
+                        if (result) {
+                            form.hide();
+                            $('.signup-completed').show();
+                        }
                         //$('.track-output').html(result);
                     },
                     error: function(errorThrown){
